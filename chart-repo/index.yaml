@@ -3,7 +3,7 @@ entries:
   app-dev:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-08T15:58:19.139064638+01:00"
+    created: "2023-08-08T16:04:13.168892374+01:00"
     dependencies:
     - name: app-helm-chart
       repository: https://raw.githubusercontent.com/selrahal/helm-environments/main/chart-repo
@@ -18,7 +18,25 @@ entries:
   app-helm-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-08T15:58:19.139521191+01:00"
+    created: "2023-08-08T16:04:13.170004743+01:00"
+    description: Sample app
+    digest: ea5450f4fe896270c6aa22e9885dc6e9563dda87f677193e5a15015dd11df177
+    name: app-helm-chart
+    urls:
+    - app-helm-chart-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-08-08T16:04:13.169774519+01:00"
+    description: Sample app
+    digest: 52d9b33efbeba65652483393067ad34cd64bdbb5d47d44a2b59a2a33b1e087ac
+    name: app-helm-chart
+    urls:
+    - app-helm-chart-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-08-08T16:04:13.169507567+01:00"
     description: Sample app
     digest: dc0eaab79c764b08f0f41deba5ff76e8c7b3d3547793662171f643cc4e620d12
     name: app-helm-chart
@@ -27,9 +45,9 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-08T15:58:19.139297608+01:00"
+    created: "2023-08-08T16:04:13.169130473+01:00"
     description: Sample app
-    digest: 55be157bc2e0e72d49355a9c4e91e1c7571ca1b62b8ea01322fa826fdcee5b0c
+    digest: 076a7f9298614af15ea96deba19badb282150a5c90fa6e9363056e1e53e183a5
     name: app-helm-chart
     urls:
     - app-helm-chart-0.1.0.tgz
@@ -37,7 +55,7 @@ entries:
   app-prod:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-08T15:58:19.139968961+01:00"
+    created: "2023-08-08T16:04:13.170707109+01:00"
     dependencies:
     - name: app-helm-chart
       repository: https://raw.githubusercontent.com/selrahal/helm-environments/main/chart-repo
@@ -49,4 +67,4 @@ entries:
     urls:
     - app-prod-1.0.0.tgz
     version: 1.0.0
-generated: "2023-08-08T15:58:19.138279556+01:00"
+generated: "2023-08-08T16:04:13.167645978+01:00"
