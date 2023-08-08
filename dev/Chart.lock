@@ -1,6 +1,6 @@
 dependencies:
 - name: app-helm-chart
   repository: https://raw.githubusercontent.com/selrahal/helm-environments/main/chart-repo
-  version: 0.3.0
-digest: sha256:d0113568fe7b9b2db2e5a031a4e0b4b559f3b17dc1edcce28945245813c45c6a
-generated: "2023-08-08T16:07:24.539490214+01:00"
+  version: 0.2.0
+digest: sha256:1112270f8e030979857e042221543e145e21ff78b9828dbc0bb4f3a9a43cd8de
+generated: "2023-08-08T16:21:19.924453296+01:00"

@@ -1,9 +1,24 @@
 apiVersion: v1
 entries:
+  app-dev:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-08-08T16:22:04.266690904+01:00"
+    dependencies:
+    - name: app-helm-chart
+      repository: https://raw.githubusercontent.com/selrahal/helm-environments/main/chart-repo
+      version: 0.2.0
+    description: Sample app for dev
+    digest: 6988d985e163a7333f6d04d3c549f3874d290f458c25dd4b0bb2821882d86cbe
+    name: app-dev
+    type: application
+    urls:
+    - app-dev-1.1.0.tgz
+    version: 1.1.0
   app-helm-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-08T16:19:37.09624341+01:00"
+    created: "2023-08-08T16:22:04.267202314+01:00"
     description: Sample app
     digest: 67c97adf4728083bef2b86945f4f28d8e41212d5baee2b993c0b1c55145595e3
     name: app-helm-chart
@@ -12,11 +27,26 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-08-08T16:19:37.095892802+01:00"
+    created: "2023-08-08T16:22:04.266910549+01:00"
     description: Sample app
     digest: ea63f7738695075be4bf144a312ac07212613cc2c2b5c3d2d4a1b90061487e58
     name: app-helm-chart
     urls:
     - app-helm-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2023-08-08T16:19:37.095202072+01:00"
+  app-prod:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-08-08T16:22:04.267621772+01:00"
+    dependencies:
+    - name: app-helm-chart
+      repository: https://raw.githubusercontent.com/selrahal/helm-environments/main/chart-repo
+      version: 0.1.0
+    description: Sample app for prod
+    digest: d13919195133169280d8971bf219d229c3e49cf720bef8b78be79c3a7b7444bb
+    name: app-prod
+    type: application
+    urls:
+    - app-prod-1.0.0.tgz
+    version: 1.0.0
+generated: "2023-08-08T16:22:04.266079444+01:00"
