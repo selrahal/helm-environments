@@ -3,4 +3,4 @@ dependencies:
   repository: https://raw.githubusercontent.com/selrahal/helm-environments/main/chart-repo
   version: 0.1.1
 digest: sha256:5b22a483c213cba1128dfe7c30254cd22686c8da997c4502fcc0edf90e968ce6
-generated: "2023-08-08T15:05:24.352275015+01:00"
+generated: "2023-08-08T16:00:09.526261479+01:00"
