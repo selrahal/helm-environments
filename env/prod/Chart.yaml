@@ -1,0 +1,10 @@
+apiVersion: v2
+name: app-helm-chart-prod
+description: Sample app for prod
+type: application
+version: 1.0.0
+appVersion: "1.16.0"
+dependencies:
+- name: app-helm-chart
+  version: "0.1.1"
+  repository: "file://../../app-helm-chart-repo"

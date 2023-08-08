@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-of-apps
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: openshift-gitops
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: demo-cluster
+    repoURL: https://github.com/selrahal/helm-environments.git
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

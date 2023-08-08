@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-helm-chart-prod 
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: app-helm-chart-prod
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: env/prod
+    repoURL: https://github.com/selrahal/helm-environments.git
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

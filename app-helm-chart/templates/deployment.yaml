@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: httpd
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: httpd
+  template:
+    metadata:
+      name: httpd
+      labels:
+        app: httpd
+    spec:
+      containers:
+        - image: registry.access.redhat.com/ubi8/httpd-24
+          name: httpd
+          securityContext:
+            capabilities:
+              drop:
+                - "ALL"
+            allowPrivilegeEscalation: false
+            runAsNonRoot: true
+            seccompProfile:
+              type: "RuntimeDefault"
+          ports:
+            - containerPort: 8080
+              name: http
+
