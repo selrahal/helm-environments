@@ -1,5 +1,13 @@
 # Helm environment demo
 
+This demo shows a helm structure that supports multiple versions of an app team's helm chart managed over different environments.
+The `app-helm-chart` chart has two versions with a minor difference:
+* version `0.1.0` has 1 pod of nginx
+* version `0.2.0` has 2 pods of nginx
+
+After deploying this demo, you will see that the `app-helm-chart-dev` namespace has 2 pods and the `app-helm-chart-prod` namespace has 1 pod.
+This is all managed through argocd and additional helm charts to manage the individual environments.
+
 ## Run it
 * Install OpenShift GitOps
 * Install the demo app-of-apps from this repo
