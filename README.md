@@ -1,1 +1,1 @@
-`helm package app-helm-chart`
+`oc apply -f app-of-apps.yaml`
