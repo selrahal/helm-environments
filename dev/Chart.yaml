@@ -7,4 +7,4 @@ appVersion: "1.16.0"
 dependencies:
 - name: app-helm-chart
   version: "0.1.0"
-  repository: "https://selrahal.github.io/helm-environments/chart-repo"
+  repository: "https://raw.githubusercontent.com/selrahal/helm-environments/main/chart-repo"

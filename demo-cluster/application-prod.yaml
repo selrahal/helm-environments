@@ -10,7 +10,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: env/prod
+    path: prod
     repoURL: https://github.com/selrahal/helm-environments.git
   syncPolicy:
     automated:
