@@ -14,6 +14,18 @@ This is all managed through argocd and additional helm charts to manage the indi
 
 `oc apply -f app-of-apps.yaml`
 
+### Verify
+
+You should have the demo application (app-of-apps) deployed.
+![app of apps in argocd](demo/app-of-apps.png)
+
+You should have both dev and prod apps deployed, these are using different versions of the app-helm-chart.
+![both dev and prod apps](demo/apps.png)
+
+You will see that the actual dev and prod apps have slightly different helm charts (versions).
+![dev pods](demo/dev.png)
+![prod pods](demo/prod.png)
+
 ## What is happening
 
 Folders are
