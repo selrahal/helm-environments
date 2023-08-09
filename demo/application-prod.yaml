@@ -10,9 +10,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    chart: app-prod
-    targetRevision: 1.1.0
-    repoURL: https://raw.githubusercontent.com/selrahal/helm-environments/main/chart-repo
+    path: prod
+    repoURL: https://github.com/selrahal/helm-environments.git
   syncPolicy:
     automated:
       prune: true
